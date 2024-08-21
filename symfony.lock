@@ -26,6 +26,9 @@
             "./migrations/.gitignore"
         ]
     },
+    "knplabs/knp-time-bundle": {
+        "version": "v2.4.0"
+    },
     "phpunit/phpunit": {
         "version": "9.6",
         "recipe": {
@@ -108,6 +111,18 @@
             "./public/index.php",
             "./src/Controller/.gitignore",
             "./src/Kernel.php"
+        ]
+    },
+    "symfony/lock": {
+        "version": "7.1",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "main",
+            "version": "5.2",
+            "ref": "8e937ff2b4735d110af1770f242c1107fdab4c8e"
+        },
+        "files": [
+            "./config/packages/lock.yaml"
         ]
     },
     "symfony/mailer": {
@@ -274,6 +289,22 @@
         "files": [
             "./config/packages/web_profiler.yaml",
             "./config/routes/web_profiler.yaml"
+        ]
+    },
+    "symfony/webpack-encore-bundle": {
+        "version": "2.1",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "main",
+            "version": "2.0",
+            "ref": "082d754b3bd54b3fc669f278f1eea955cfd23cf5"
+        },
+        "files": [
+            "./assets/app.js",
+            "./assets/styles/app.css",
+            "./config/packages/webpack_encore.yaml",
+            "./package.json",
+            "./webpack.config.js"
         ]
     },
     "twig/extra-bundle": {
